@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+   *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   .animation{
+      display: flex;
+      gap: 5%;
+      justify-content:center;
+      padding-top:20vh ;
+   }
+   .ball{
+      height: 50px;
+      width: 50px;
+      border-radius: 70%;
+      animation-name:bounce;
+      animation-duration: 1s;
+     /* animation-timing-function: ease;*/
+      animation-iteration-count: infinite;
+      animation-direction:alternate;
+   }
+
+   @keyframes bounce{
+      0%{
+         transform: translatey(-150px);
+      }
+
+   }
+
+   #ball1{
+      background-color: blue;
+      animation-delay: 0.5s;
+   }
+   #ball2{
+      background-color: red;
+      animation-delay: 1s;
+   }
+   #ball3{
+      background-color: pink;
+      animation-delay: 1.5s;
+   }
+   .animation2{
+      display: flex;
+      gap: 5%;
+      justify-content:center;
+      padding-top:10vh ;
+      align-items: center;
+   }
+   .bl{
+     /* height: 30px;
+      width: 30px;*/
+      border-radius: 50%;
+      animation-name:blink;
+      animation-duration: 2s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+      /*animation-direction:alternate;*/
+   }
+
+   #ba{
+      background-color:green;
+      animation-delay: 1s;
+      width: 50px;
+      height: 50px;
+
+
+   }
+   #bb{
+      background-color:rgb(16, 195, 16);
+      animation-delay: 1.5s;
+      width: 40px;
+      height: 40px;
+
+   }
+   #bc{
+      background-color:rgb(95, 239, 95);
+      animation-delay: 2s;
+      width: 35px;
+      height: 35px;
+
+   }
+
+   #bd{
+      background-color: rgb(163, 243, 163);
+      animation-delay: 2.5s;
+      width: 25px;
+      height: 25px;
+
+   }
+   #be{
+      background-color: rgb(200, 236, 203);
+      animation-delay: 3s;
+      width: 20px;
+      height: 20px;
+
+   }
+   @keyframes blink{
+      50%{
+         transform:scaley(1.5);
+      }
+
+   }
+   .animation3{
+      display:flex;
+      gap: 5%;
+      font-size:50px;
+      justify-content: center;
+      font-family:cursive;
+   }
+   .nameg{
+      animation-name: teju;
+      animation-duration: 3s;
+      animation-timing-function: ease-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+   }
+   #in{
+      width: 50px;
+      height: 50px;
+      animation-delay: 1s;
+   }
+   #on{
+      width: 50px;
+      height: 50px;
+      animation-delay: 1.5s;
+   }
+   #ino{
+      width: 50px;
+      height: 50px;
+      animation-delay: 2s;
+   }
+   #oni{
+      width: 50px;
+      height: 50px;
+      animation-delay: 2.5s;
+   }
+    @keyframes teju{
+      from{
+         transform: skew(55deg);
+      }
+    }
+   
+
+    .animation4{
+      display:flex;
+      gap: 5%;
+      font-size:50px;
+      justify-content: center;
+      font-family:cursive;
+   }
+   .name{
+      animation-name:isu;
+      animation-duration: 3s;
+      animation-timing-function: ease-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+   }
+   .nam1{
+      width: 50px;
+      height: 50px;
+      animation-delay: 1s;
+   }
+   .name2{
+      width: 50px;
+      height: 50px;
+      animation-delay: 1.5s;
+   }
+   .name3{
+      width: 50px;
+      height: 50px;
+      animation-delay: 2s;
+   }
+   .name4{
+      width: 50px;
+      height: 50px;
+      animation-delay: 2.5s;
+   }
+   
+
+    @keyframes isu{
+       50%{
+         transform: skew(-55deg);
+       }
+    }
+    .rotate{
+      background-color: grey;
+      width:30%;
+      height: 15vh;
+      font-weight:900 ;
+      animation-name: teja;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+    }
+    @keyframes teja{
+      from{
+         transform: rotatey(180deg);
+      }
+    }
+    
+
+</style>
+<body>
+   <div class="animation">
+      <div class="ball" id="ball1"></div>
+      <div class="ball" id="ball2"></div>
+       <div class="ball" id="ball3"></div>
+   </div>
+
+    <div class="animation2">
+      <div class="bl" id="ba"></div>
+      <div class="bl" id="bb"></div>
+      <div class="bl" id="bc"></div>
+      <div class="bl" id="bd"></div>
+      <div class="bl" id="be"></div>
+    
+    </div>
+
+<br><br><br><br>
+
+    <div class="animation3">
+      
+      
+      <div class="nameg"  id="in">T</div>
+      <div class="nameg"  id="on">E</div> 
+      <div class="nameg"  id="ino">J</div>
+      <div class="nameg" id="oni">U</div>
+    </div>
+      <br><br>
+    <div class="animation4">
+      
+      
+      <div class="name" id="name1">T</div>
+      <div class="name"  id="name2">E</div> 
+      <div class="name"  id="name3">J</div>
+      <div class="name"  id="name4">U</div>
+    </div>
+<br><br>
+   <div class="animation4">
+      <div class="rotate">tejeswari</div>
+   </div>
+   <br><br><br><br>
+
+  
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
